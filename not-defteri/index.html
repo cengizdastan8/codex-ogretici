@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minik Not Defteri</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Gerçek Codex eğitim projesi</p>
+          <h1>Minik Not Defteri</h1>
+          <p>Notunu yaz; tarayıcı kapansa bile bu cihazda kalsın.</p>
+        </div>
+        <div class="counter" aria-live="polite">
+          <strong id="note-count">0</strong>
+          <span>not</span>
+        </div>
+      </header>
+
+      <section class="workspace" aria-label="Not çalışma alanı">
+        <form id="note-form" class="note-form">
+          <label for="note-title">Başlık</label>
+          <input id="note-title" name="title" maxlength="80" placeholder="Örn. Market listesi" required />
+
+          <label for="note-body">Not</label>
+          <textarea id="note-body" name="body" maxlength="500" placeholder="Hatırlamak istediğini yaz"></textarea>
+
+          <div class="form-actions">
+            <button id="save-note-button" type="submit">Notu ekle</button>
+            <button id="cancel-edit-button" class="secondary-button" type="button" hidden>İptal</button>
+          </div>
+          <p id="form-status" class="status" aria-live="polite"></p>
+        </form>
+
+        <section class="notes-panel" aria-labelledby="notes-title">
+          <div class="notes-heading">
+            <h2 id="notes-title">Notlarım</h2>
+            <span>Bu tarayıcıda saklanır</span>
+          </div>
+          <div class="search-field">
+            <label for="note-search">Notlarda ara</label>
+            <input
+              id="note-search"
+              type="search"
+              placeholder="Başlık veya not içeriği"
+              autocomplete="off"
+              aria-describedby="search-status"
+            />
+            <p id="search-status" class="search-status" aria-live="polite"></p>
+          </div>
+          <p id="empty-state" class="empty-state">Henüz not yok. Soldan ilk notunu ekle.</p>
+          <p id="no-results-state" class="empty-state" hidden>Aramanla eşleşen not bulunamadı.</p>
+          <ul id="notes-list" aria-label="Kaydedilmiş notlar"></ul>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
