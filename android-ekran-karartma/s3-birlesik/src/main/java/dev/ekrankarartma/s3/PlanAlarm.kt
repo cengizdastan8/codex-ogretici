@@ -11,10 +11,11 @@ import java.time.ZoneId
 /**
  * Plan sınırlarını AlarmManager.setAlarmClock ile kurar.
  *
- * DOĞRULANMADI: setAlarmClock ile kurulan alarmların arka planda ön plan servisi başlatmaya izin verdiği
- * varsayılıyor. Resmi belgede bu istisna doğrulanamadı; cihazda test edilmeden güvenilmemeli.
- * SCHEDULE_EXACT_ALARM izni olmadan çağrının başarısız olabileceği ihtimaline karşı önce [canSchedule]
- * kontrol edilir.
+ * Kanıt: developer.android.com AlarmManager referansı, setAlarmClock bölümü (2026-11-23 tarihinde okundu):
+ *   "Alarms scheduled via this API will be allowed to start a foreground service even if the app is in the background."
+ *   Aynı bölüm: "Requires Manifest.permission.SCHEDULE_EXACT_ALARM"; targetSdk 31+ için bu izin gerekir.
+ * Sınır: arka plan kısıtlarının resmi istisna listesinde alarm maddesi yok; dayanak referans sayfasıdır.
+ * Cihazda test edilmeden tam güvenilmemeli. İzin yoksa önce [canSchedule] false döner ve plan kurulmaz.
  *
  * Yan etki: sistem durum çubuğunda alarm simgesi gösterebilir. Simgeye dokunulunca [MainActivity] açılır.
  */
