@@ -24,7 +24,15 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
+    testOptions {
+        // Robolectric'in layout olcumu icin Android kaynaklarina ihtiyaci var.
+        unitTests.isIncludeAndroidResources = true
+    }
 }
 
 dependencies {
+    // Calisma zamani bagimliligi yok; yalnizca birim testleri icin.
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.robolectric:robolectric:4.18.1")
 }

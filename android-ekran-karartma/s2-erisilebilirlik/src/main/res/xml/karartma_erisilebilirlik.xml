@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Olay dinlenmez: accessibilityEventTypes tanimlanmaz (varsayilan bos).
+    Pencere icerigi okunmaz: canRetrieveWindowContent="false".
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:canRetrieveWindowContent="false"
+    android:description="@string/erisilebilirlik_aciklama" />

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/primary_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:minHeight="76dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Ton satırı: etiket + üç çip. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tone_label"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_tone"
+            android:textSize="13sp" />
+
+        <RadioGroup
+            android:id="@+id/tone_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tone_neutral"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/chip_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="@string/ton_notr"
+                android:textColor="@color/chip_text"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/tone_warm"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/chip_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="@string/ton_sicak"
+                android:textColor="@color/chip_text"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/tone_matte"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/chip_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="@string/ton_mat"
+                android:textColor="@color/chip_text"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- Yoğunluk satırı: etiket + üç çip. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/intensity_label"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_intensity"
+            android:textSize="13sp" />
+
+        <RadioGroup
+            android:id="@+id/intensity_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/intensity_light"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/chip_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="@string/yogunluk_hafif"
+                android:textColor="@color/chip_text"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/intensity_medium"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/chip_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="@string/yogunluk_orta"
+                android:textColor="@color/chip_text"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/intensity_strong"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/chip_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="@string/yogunluk_guclu"
+                android:textColor="@color/chip_text"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/plan_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:minHeight="48dp"
+        android:text="@string/plan_switch"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/plan_start"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="44dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/plan_end"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:minHeight="44dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/privacy_note"
+        android:textSize="12sp" />
+
+</LinearLayout>

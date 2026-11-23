@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ekran kenar bosluklari. Android 15+ kenardan kenara cizimde sistem cubugu yuksekligi bunlarin ustune eklenir. -->
+    <dimen name="yatay_bosluk">16dp</dimen>
+    <dimen name="dikey_bosluk">24dp</dimen>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kaydirma yok: icerik 360x640 dp ekrana sigacak kadar kisa tutuldu (testle olculur). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kok"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingStart="@dimen/yatay_bosluk"
+    android:paddingEnd="@dimen/yatay_bosluk"
+    android:paddingTop="@dimen/dikey_bosluk"
+    android:paddingBottom="@dimen/dikey_bosluk">
+
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/baslik"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/alt_baslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/alt_baslik"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/durum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/adim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/adim_yazisi"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/ana_dugme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="56dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/uyari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/uyari_pil"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/gizlilik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/gizlilik"
+        android:textSize="13sp" />
+
+</LinearLayout>

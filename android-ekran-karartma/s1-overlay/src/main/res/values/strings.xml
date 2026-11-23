@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ekran Karartma</string>
+    <string name="app_title">Ekran Karartma</string>
+
+    <string name="status_off">Kapalı</string>
+    <string name="status_on">Açık</string>
+    <string name="status_permission">İzin gerekli</string>
+
+    <string name="button_permission">1. İzin ver</string>
+    <string name="button_turn_on">Karart</string>
+    <string name="button_turn_off">Karartmayı kapat</string>
+
+    <string name="hint_permission">Açılan listede ‘Ekran Karartma’ uygulamasını bulun, anahtarı açın, sonra geri dönün.</string>
+    <string name="hint_tile">Hızlı ayarlardan da açıp kapatabilirsiniz.</string>
+
+    <string name="privacy_note">İnternet yok. Reklam ve veri toplama yok. Tıbbi ürün değildir.</string>
+
+    <string name="notif_channel_name">Ekran karartma</string>
+    <string name="notif_title">Ekran karartma açık</string>
+    <string name="notif_text">Kapatmak için ‘Kapat’a dokunun.</string>
+    <string name="notif_action_close">Kapat</string>
+
+    <string name="tile_label">Ekran Karartma</string>
+    <string name="toast_settings_unavailable">İzin ekranı açılamadı.</string>
+</resources>

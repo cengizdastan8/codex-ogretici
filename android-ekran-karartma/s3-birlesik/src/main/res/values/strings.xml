@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ekran Karartma S3</string>
+    <string name="app_title">Ekran Karartma</string>
+
+    <string name="status_off">Kapalı</string>
+    <string name="status_on_format">Açık - %1$s - %2$s</string>
+    <string name="status_plan_format">Plan: %1$s - %2$s</string>
+    <string name="status_permission">İzin gerekli</string>
+    <string name="status_alarm_permission">Plan için alarm izni gerekli</string>
+
+    <string name="button_permission">1. İzin ver</string>
+    <string name="button_turn_on">Karart</string>
+    <string name="button_turn_off">Karartmayı kapat</string>
+
+    <string name="hint_permission">Açılan listede ‘Ekran Karartma S3’ uygulamasını bulun, anahtarı açın, sonra geri dönün.</string>
+    <string name="hint_alarm_permission">‘Ekran Karartma S3’ için alarm iznini açın, sonra geri dönün.</string>
+    <string name="hint_tile">Hızlı ayarlardaki ‘Ekran Karartma’ kutucuğundan da açıp kapatabilirsiniz.</string>
+
+    <string name="label_tone">Ton</string>
+    <string name="label_intensity">Yoğunluk</string>
+    <string name="ton_notr">Nötr</string>
+    <string name="ton_sicak">Sıcak</string>
+    <string name="ton_mat">Mat</string>
+    <string name="yogunluk_hafif">Hafif</string>
+    <string name="yogunluk_orta">Orta</string>
+    <string name="yogunluk_guclu">Güçlü</string>
+
+    <string name="plan_switch">Gece planı</string>
+    <string name="plan_start_button">Başlangıç %1$s</string>
+    <string name="plan_end_button">Bitiş %1$s</string>
+
+    <string name="toast_same_times">Başlangıç ve bitiş aynı olamaz.</string>
+    <string name="toast_settings_unavailable">İzin ekranı açılamadı.</string>
+
+    <string name="privacy_note">İnternet yok. Reklam ve veri toplama yok. Ekran içeriğinizi okumaz. Tıbbi ürün değildir.</string>
+
+    <string name="notif_channel_name">Ekran karartma</string>
+    <string name="notif_title">Ekran karartma açık</string>
+    <string name="notif_text">Kapatmak için ‘Kapat’a dokunun.</string>
+    <string name="notif_action_close">Kapat</string>
+
+    <string name="tile_label">Ekran Karartma</string>
+</resources>

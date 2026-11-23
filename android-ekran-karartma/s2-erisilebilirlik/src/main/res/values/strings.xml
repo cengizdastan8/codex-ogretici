@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uygulama_adi">Ekran Karartma S2</string>
+    <!-- Erisilebilirlik listesinde gorunen ad. Ekrandaki yonerge bu adi anar. -->
+    <string name="erisilebilirlik_servis_adi">Ekran Karartma</string>
+
+    <string name="baslik">Ekran Karartma</string>
+    <string name="alt_baslik">Erişilebilirlik katmanı</string>
+
+    <string name="durum_servis_kapali">Erişilebilirlik servisi etkin değil.</string>
+    <string name="durum_servis_baglanamadi">Servis etkin ama çalışmıyor. Ayarlarda kapatıp yeniden açın.</string>
+    <string name="durum_kapali">Karartma kapalı.</string>
+    <string name="durum_acik">Karartma açık.</string>
+
+    <string name="adim_yazisi">Açılan listede \'Ekran Karartma\'yı bulun, açın, onaylayın, sonra geri dönün.</string>
+    <string name="bildirim_izni_uyari">Bildirim izni kapalı, bu yüzden bildirimdeki “Kapat” düğmesi görünmez. Kapatmak için bu ekranı kullanın.</string>
+
+    <string name="dugme_erisilebilirlik">1. Erişilebilirliği aç</string>
+    <string name="dugme_karart">Karart</string>
+    <string name="dugme_karartmayi_kapat">Karartmayı kapat</string>
+
+    <string name="uyari_pil">Pil tasarrufu bu servisi durdurabilir. Durursa karartma kapanır.</string>
+    <string name="gizlilik">İnternet yok. Reklam ve veri toplama yok. Tıbbi ürün değildir.</string>
+
+    <string name="erisilebilirlik_aciklama">Ekranı karartmak için kullanılır. Ekran içeriğinizi okumaz ve veri toplamaz.</string>
+
+    <string name="kutucuk_etiketi">Ekran karartma</string>
+
+    <string name="bildirim_kanali">Ekran karartma durumu</string>
+    <string name="bildirim_baslik">Ekran karartma açık</string>
+    <string name="bildirim_metin">Kapatmak için “Kapat” düğmesine dokunun.</string>
+    <string name="bildirim_kapat">Kapat</string>
+
+    <string name="toast_ayarlar_acilamadi">Erişilebilirlik ayarları açılamadı.</string>
+    <string name="toast_karartma_baslatilamadi">Karartma başlatılamadı.</string>
+</resources>

@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--
+        Bu modul yalnizca bildirim izni ister. SYSTEM_ALERT_WINDOW, INTERNET ve
+        foreground service izinleri bilerek YOK (Senaryo 2: erisilebilirlik katmani).
+    -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
-        android:label="Ekran Karartma S2"
+        android:icon="@drawable/ic_uygulama"
+        android:label="@string/uygulama_adi"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -13,6 +21,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Sistem tarafindan baglanir. Kullanici Erisilebilirlik ayarlarindan acar. -->
+        <service
+            android:name=".KarartmaErisilebilirlikServisi"
+            android:exported="true"
+            android:label="@string/erisilebilirlik_servis_adi"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/karartma_erisilebilirlik" />
+        </service>
+
+        <!-- Hizli ayar kutucugu. Servis bagliysa dogrudan acar/kapatir; degilse uygulamayi acar. -->
+        <service
+            android:name=".KarartmaKutucugu"
+            android:exported="true"
+            android:icon="@drawable/ic_karartma"
+            android:label="@string/kutucuk_etiketi"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Bildirimdeki "Kapat" eylemi. Yalnizca uygulama ici. -->
+        <receiver
+            android:name=".KapatAlici"
+            android:exported="false" />
+
     </application>
 
 </manifest>
